@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="style/dashboard.css">
+    <script src="script.js" defer></script>
+
+    <title>E-RAPORT</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <!--SideBar-->
+        <aside>
+            <div class="toggle">
+                <div class="logo">
+                    <img src="assets/logo.png" alt="">
+                    <h2>SMK
+                        <span>Nusantara</span>
+                    </h2>
+                </div>
+                <div class="close" id="close-btn">
+                    <span class="material-symbols-outlined">close</span>
+                </div>
+            </div>
+
+            <div class="sidebar">
+                <a href="#" class="active">
+                    <span class="material-symbols-outlined">dashboard</span>
+                    <h3>Dashboard</h3>
+                </a>
+                <a href="users.html">
+                    <span class="material-symbols-outlined">person_outline</span>
+                    <h3>User</h3>
+                </a>
+                <a href="waliKelas.html">
+                    <span class="material-symbols-outlined">school</span>
+                    <h3>Wali Kelas</h3>
+                </a>
+                <a href="nilai.html">
+                    <span class="material-symbols-outlined">inventory</span>
+                    <h3>Nilai</h3>
+                </a>
+                <a href="teacher.html">
+                    <span class="material-symbols-outlined">groups</span>
+                    <h3>Teacher</h3>
+                </a>
+                <a href="about.html">
+                    <span class="material-symbols-outlined">report_gmailerrorred</span>
+                    <h3>About</h3>
+                </a>
+                <a href="#">
+                    <span class="material-symbols-outlined">add</span>
+                    <h3>New Login</h3>
+                </a>
+                <a href="index.html">
+                    <span class="material-symbols-outlined">logout</span>
+                    <h3>Logout</h3>
+                </a>
+            </div>
+        </aside>
+        <!-- End of Sidebar Section -->
+
+        <!-- Main Content -->
+        <main>
+            <h1>Dashboard</h1>
+            <!--Analysis-->
+            <div class="analyse">
+                <div class="info_total">
+                    <div class="status">
+                        <div class="info">
+                            <h3>Total MaPel</h3>
+                            <h1>1 mapel</h1>
+                        </div>
+                        <div class="progresss">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="percentage">
+                                <span class="material-symbols-outlined">menu_book</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="info_total">
+                    <div class="status">
+                        <div class="info">
+                            <h3>Total Kelas</h3>
+                            <h1>11 kelas</h1>
+                        </div>
+                        <div class="progresss">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="percentage">
+                                <span class="material-symbols-outlined">home</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="info_total">
+                    <div class="status">
+                        <div class="info">
+                            <h3>Total Siswa</h3>
+                            <h1>1245 siswa</h1>
+                        </div>
+                        <div class="progresss">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="percentage">
+                                <span class="material-symbols-outlined">school</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--End of Analysis-->
+
+            <div class="new-users">
+                <!--Jadwal-->
+                <h2>Jadwal</h2>
+                <div class="analyse">
+                    <div class="sales">
+                        <div class="status">
+                            <div class="info">
+                                <h1>senin</h1>
+                                <h3>Pendidikan Agama dan Budi Pekerti</h3>
+                                <p>07.30 - 09.00</p><br>
+                                <h3>Teknologi Dasar Otomotif</h3>
+                                <p>09.30 - 11.00</p><br>
+                                <h3>Engine dan Unit Alat Berat</h3>
+                                <p>13.00 - 15.00</p><br>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="visits">
+                        <div class="status">
+                            <div class="info">
+                                <h1>selasa</h1>
+                                <h3>Bahasa Inggris</h3>
+                                <p>07.30 - 09.00</p><br>
+                                <h3>Pekerjaan Dasar Teknik Otomotif</h3>
+                                <p>09.30 - 11.00</p><br>
+                                <h3>Kelistrikan dan Sistim Kontrol Alat Berat</h3>
+                                <p>13.00 - 15.00</p><br>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="searches">
+                        <div class="status">
+                            <div class="info">
+                                <h1>rabu</h1>
+                                <h3>Bahasa Indonesia</h3>
+                                <p>07.30 - 09.00</p><br>
+                                <h3>Gambar Teknik Otomotif</h3>
+                                <p>09.30 - 11.00</p><br>
+                                <h3>Hidrolik Alat Berat</h3>
+                                <p>13.00 - 15.00</p><br>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="searches">
+                        <div class="status">
+                            <div class="info">
+                                <h1>kamis</h1>
+                                <h3>Bahasa Indonesia</h3>
+                                <p>07.30 - 09.00</p><br>
+                                <h3>Gambar Teknik Otomotif</h3>
+                                <p>09.30 - 11.00</p><br>
+                                <h3>Hidrolik Alat Berat</h3>
+                                <p>13.00 - 15.00</p><br>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="searches">
+                        <div class="status">
+                            <div class="info">
+                                <h1>jum'at</h1>
+                                <h3>Seni Budaya</h3>
+                                <p>07.30 - 09.00</p><br>
+                                <h3>Produk Kreatif dan Kewirausahaan</h3>
+                                <p>09.30 - 11.00</p><br>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="searches">
+                        <div class="status">
+                            <div class="info">
+                                <h1>sabtu</h1>
+                                <h3>Simulasi dan Komunikasi Digital</h3>
+                                <p>07.30 - 09.00</p><br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- End of Main Contain-->
+
+        <!-- Right Section -->
+        <div class="right-section">
+            <div class="nav">
+                <p id="jam"></p>
+                <p>:</p>
+                <p id="menit"></p>
+                <p>:</p>
+                <p id="detik"></p>
+                
+                <script>
+                    window.setTimeout("waktu()", 1000);
+                 
+                    function waktu() {
+                        var waktu = new Date();
+                        setTimeout("waktu()", 1000);
+                        document.getElementById("jam").innerHTML = waktu.getHours();
+                        document.getElementById("menit").innerHTML = waktu.getMinutes();
+                        document.getElementById("detik").innerHTML = waktu.getSeconds();
+                    }
+                </script>
+                <button id="menu-btn">
+                    <span class="material-symbols-outlined">menu</span>
+                </button>
+                <div class="dark-mode">
+                    <span class="material-symbols-outlined active">light_mode</span>
+                    <span class="material-symbols-outlined">dark_mode</span>
+                </div>
+
+                <div class="profile">
+                    <div class="info">
+                        <p>Hey, <b>ADMIN</b></p>
+                        <small class="text-muted">Admin</small>
+                    </div>
+                    <div class="profile-photo">
+                        <img src="assets/Mahasiswa.jpg">
+                    </div>
+                </div>
+
+            </div>
+            <!-- End of Nav -->
+
+            <div class="user-profile">
+                <a href="#">
+                    <div class="logo">
+                        <img src="assets/logo.png">
+                        <h2>SMK Nusantara</h2>
+                        <p>Kota Bontang</p>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Reminder -->
+            <div class="reminders">
+                <div class="header">
+                    <h2>Reminders</h2>
+                    <span class="material-symbols-outlined">notifications_none</span>
+                </div>
+
+                <div class="notification">
+                    <div class="icon">
+                        <span class="material-symbols-outlined">volume_up</span>
+                    </div>
+                    <div class="content">
+                        <div class="info">
+                            <h3>Meeting End of Semester</h3>
+                            <small class="text_muted">08:00 - 12:00 WITA</small>
+                        </div>
+                        <span class="material-symbols-outlined">more_vert</span>
+                    </div>
+                </div>
+
+                <div class="notification deactive">
+                    <div class="icon">
+                        <span class="material-symbols-outlined">edit</span>
+                    </div>
+                    <div class="content">
+                        <div class="info">
+                            <h3>Deadline Input Nilai</h3>
+                            <small class="text_muted">08:00 - 12:00 WITA</small>
+                        </div>
+                        <span class="material-symbols-outlined">more_vert</span>
+                    </div>
+                </div>
+
+                <div class="notification add-reminder">
+                    <div>
+                        <span class="material-symbols-outlined">add</span>
+                        <h3>Add Reminder</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="dashboard.js"></script>
+</body>
+</html>

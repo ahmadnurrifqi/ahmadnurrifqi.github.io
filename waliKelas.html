@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="style/about.css">
+    <script src="script.js" defer></script>
+
+    <title>E-RAPORT</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <!--SideBar-->
+        <aside>
+            <div class="toggle">
+                <div class="logo">
+                    <img src="assets/logo.png" alt="">
+                    <h2>SMK
+                        <span>Nusantara</span>
+                    </h2>
+                </div>
+                <div class="close" id="close-btn">
+                    <span class="material-symbols-outlined">close</span>
+                </div>
+            </div>
+
+            <div class="sidebar">
+                <a href="dashboard.html">
+                    <span class="material-symbols-outlined">dashboard</span>
+                    <h3>Dashboard</h3>
+                </a>
+                <a href="users.html">
+                    <span class="material-symbols-outlined">person_outline</span>
+                    <h3>User</h3>
+                </a>
+                <a href="#" class="active">
+                    <span class="material-symbols-outlined">school</span>
+                    <h3>Wali Kelas</h3>
+                </a>
+                <a href="nilai.html">
+                    <span class="material-symbols-outlined">inventory</span>
+                    <h3>Nilai</h3>
+                </a>
+                <a href="teacher.html">
+                    <span class="material-symbols-outlined">groups</span>
+                    <h3>Teacher</h3>
+                </a>
+                <a href="about.html">
+                    <span class="material-symbols-outlined">report_gmailerrorred</span>
+                    <h3>About</h3>
+                </a>
+                <a href="#">
+                    <span class="material-symbols-outlined">add</span>
+                    <h3>New Login</h3>
+                </a>
+                <a href="index.html">
+                    <span class="material-symbols-outlined">logout</span>
+                    <h3>Logout</h3>
+                </a>
+            </div>
+        </aside>
+        <!-- End of Sidebar Section -->
+
+        <!-- Main Content -->
+        <main>
+            <h1>Users</h1>
+            <!--Analysis-->
+            <div class="analyse">
+                <div class="sales">
+                    <div class="status">
+                        <div class="info">
+                            <h3>Total Sales</h3>
+                            <h1>$65,024</h1>
+                        </div>
+                        <div class="progresss">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="percentage">
+                                <p>+81%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="visits">
+                    <div class="status">
+                        <div class="info">
+                            <h3>Site Visit</h3>
+                            <h1>24,981</h1>
+                        </div>
+                        <div class="progresss">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="percentage">
+                                <p>-48%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="searches">
+                    <div class="status">
+                        <div class="info">
+                            <h3>Searches</h3>
+                            <h1>14,147</h1>
+                        </div>
+                        <div class="progresss">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="percentage">
+                                <p>+21%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--End of Analysis-->
+
+            <!-- Recent Orders Table -->
+            <div class="recent-orders">
+                <h2>Recent Orders</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nama</th>
+                            <th>NISN</th>
+                            <th>Nilai</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+                <a href="#">Show All</a>
+            </div>
+            <!-- End of Recent Orders -->
+        </main>
+        <!-- End of Main Contain-->
+
+        <!-- Right Section -->
+        <div class="right-section">
+            <div class="nav">
+                <p id="jam"></p>
+                <p>:</p>
+                <p id="menit"></p>
+                <p>:</p>
+                <p id="detik"></p>
+                
+                <script>
+                    window.setTimeout("waktu()", 1000);
+                 
+                    function waktu() {
+                        var waktu = new Date();
+                        setTimeout("waktu()", 1000);
+                        document.getElementById("jam").innerHTML = waktu.getHours();
+                        document.getElementById("menit").innerHTML = waktu.getMinutes();
+                        document.getElementById("detik").innerHTML = waktu.getSeconds();
+                    }
+                </script>
+                <button id="menu-btn">
+                    <span class="material-symbols-outlined">menu</span>
+                </button>
+                <div class="dark-mode">
+                    <span class="material-symbols-outlined active">light_mode</span>
+                    <span class="material-symbols-outlined">dark_mode</span>
+                </div>
+
+                <div class="profile">
+                    <div class="info">
+                        <p>Hey, <b>ADMIN</b></p>
+                        <small class="text-muted">Admin</small>
+                    </div>
+                    <div class="profile-photo">
+                        <img src="assets/Mahasiswa.jpg">
+                    </div>
+                </div>
+
+            </div>
+            <!-- End of Nav -->
+        </div>
+    </div>
+    
+    <script src="dashboard.js"></script>
+</body>
+</html>
